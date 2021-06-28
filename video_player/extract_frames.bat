@@ -1,0 +1,1 @@
+ffmpeg -i bad_apple.mp4 -vf "scale=64:32,fps=25" -pix_fmt monob frames/c01_%04d.bmp

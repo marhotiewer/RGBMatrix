@@ -1,0 +1,11 @@
+Data pin/pins are set to the desired bit value to send
+Clock pin lets the slave shift the value of data pin/pins into the register
+Latch pin signals the slave data transmission is done
+
+This is possible through either 'bit banging' which is software based, or SPI (Serial Peripheral Interface Bus)
+Shift register SPI/bit banging examples: https://appelsiini.net/2012/driving-595-shift-registers/
+
+https://www.sparkfun.com/news/2650
+https://afterhourscoding.wordpress.com/tag/bcm/
+https://forum.arduino.cc/t/8x8-rgb-led-matrix-with-pwm-or-similar/111959
+https://justanotherelectronicsblog.com/?p=636

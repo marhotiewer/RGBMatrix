@@ -1,0 +1,1 @@
+g++ -Wall -Werror -Wl,--gc-sections,--subsystem,windows -s -Os -DSFML_STATIC src/*.cpp -o bin/main.exe -Ilibs\sfml-2.5.1\include -Llibs\sfml-2.5.1\lib -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lsfml-main -lopengl32 -lfreetype -lwinmm -lgdi32 -static

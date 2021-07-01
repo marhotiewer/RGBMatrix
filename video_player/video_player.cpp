@@ -48,7 +48,7 @@ void decode(const char* path, uint8_t data[][64]) {
 }
 
 int main(int argc, char* argv[]) {
-	HANDLE hComm = CreateFileA("\\\\.\\COM4", GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL);
+	HANDLE hComm = CreateFileA("\\\\.\\COM3", GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL);
 
 	if (hComm == INVALID_HANDLE_VALUE) {
 		printf("error in opening serial port\n");

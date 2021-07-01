@@ -1,6 +1,6 @@
 #include "Circle.h"
 
-Circle::Circle(Vector2i p1, int r, RGB color, bool filled): Drawable(p1, color), filled(filled), r(r) {}
+Circle::Circle(Vector2i p1, int r, RGB color, bool filled): Drawable(p1, color), delta(Vector2i(1, 1)), filled(filled), r(r) {}
 
 void Circle::draw(RGBMatrix &matrix) {
 	int x=r, y=0;
@@ -50,5 +50,16 @@ void Circle::draw(RGBMatrix &matrix) {
 				}
 			}
 		}
+	}
+}
+
+void Circle::update() {
+	p1 += delta;
+
+	if(p1.y+r >= 32 || p1.y-r <= 1) {
+		delta.y *= -1;
+	}
+	if(p1.x+r >= 64 || p1.x-r <= 1) {
+		delta.x *= -1;
 	}
 }

@@ -12,7 +12,7 @@
 TARGET            ?= arduino_due
 CONSOLE_BAUDRATE  ?= 460800
 HWLIB_BAUDRATE 	  ?= 460800
-SERIAL_PORT       ?= COM6
+SERIAL_PORT       ?= COM3
 
 # defer to the Makefile.link
 include           $(RELATIVE)/Makefile.link
